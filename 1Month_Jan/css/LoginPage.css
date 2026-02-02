@@ -1,0 +1,37 @@
+body{
+    background:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.main-box{
+    background: white;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0em;
+
+
+   }
+   .main-box{
+    -webkit-box-shadow: 1px 0px 7px 7px rgba(0,0,0,0.97); 
+box-shadow: 1px 0px 7px 7px rgba(0,0,0,0.97);
+   }
+   
+   input{
+    background: #ece1e1 !important;
+   }
+
+   button.login-btn
+   {
+    background: #76B952 !important;
+    color: white ;
+
+   }
+   .p-margin{
+        margin-top: -2.75rem !important;
+    margin-bottom: 2.25rem !important;
+   }

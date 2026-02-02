@@ -1,0 +1,1 @@
+console.log('Welcome to java script first prog..') //see msg print on terminal window
