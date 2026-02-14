@@ -1,0 +1,95 @@
+/* Universal Selector - Applies to all HTML elements */
+* {
+  margin: 0; /* Remove default margin from all elements */
+  padding: 0; /* Remove default padding from all elements */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Body - Main page container */
+body {
+  background: #fff; /* White background */
+}
+
+/* Gmail Container - Main wrapper for entire app */
+.gmail-container {
+  height: 100vh; /* Full viewport height (100% of screen) */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Header section CSS */
+.gmail-header {
+  display: flex;
+  text-align: center; /* Vertically center all items */
+  padding: 8px 12px; /* 8px top/bottom, 12px left/right padding */
+  height: 61px; /* Fixed header height */
+  background-color: #f8fafd;
+}
+
+.header-search {
+  max-width: 500px;
+  background: #EAEEF7;
+  border: 0px solid black;
+  border-radius: 50px;
+}
+
+/* sidebar csss */
+
+.compose-btn{
+  background: #c2e7ff;
+  border: none !important;
+  /* height: 30px; */
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: ba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+  color: #202124 !important;
+  text-align: center;
+}
+
+.sidebar{
+  width: 250px;
+  padding: 9px;
+  background: #f8fafd;
+}
+.compose-btn:hover{
+  background: rgb(200, 230, 30);
+   /* background: #c2e7ff; */
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav{
+  padding-left: 10px;
+
+
+}
+.nav-item {
+  padding: 10 24px 0 20px !important;  /* Right 24px, left 20px padding */
+  height: 32px;                       /* Fixed height */
+  border-radius: 0 16px 16px 0 !important; /* Rounded right corners only */
+  font-size: 16px;                    /* Text size */
+  color: #202124 !important;          /* Dark gray text */
+  margin: 2px 0;                      /* 2px top/bottom margin */
+  text-decoration: none !important;   /* Remove underline */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* ===Main content=== */
+.main-content{
+  display: flex;
+  flex-direction: column;
+}
+.email-row{
+  height: 35px;
+  cursor: pointer;
+}
+.email-list{
+  
+  background: #fff;
+
+}
