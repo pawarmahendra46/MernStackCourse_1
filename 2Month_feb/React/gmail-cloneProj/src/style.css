@@ -1,13 +1,23 @@
+
+/* Google font family */
+/* ================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+/* ================ */
 /* Universal Selector - Applies to all HTML elements */
 * {
   margin: 0; /* Remove default margin from all elements */
   padding: 0; /* Remove default padding from all elements */
   box-sizing: border-box; /* Include padding and border in element's total width */
+font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 975rem;
+  font-style: normal;
 }
 
 /* Body - Main page container */
 body {
   background: #fff; /* White background */
+  
 }
 
 /* Gmail Container - Main wrapper for entire app */
@@ -24,6 +34,9 @@ body {
   padding: 8px 12px; /* 8px top/bottom, 12px left/right padding */
   height: 61px; /* Fixed header height */
   background-color: #f8fafd;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .header-search {
@@ -36,7 +49,7 @@ body {
 /* sidebar csss */
 
 .compose-btn{
-  background: #c2e7ff;
+      background-color: gainsboro !important;
   border: none !important;
   /* height: 30px; */
   border-radius: 15px;
@@ -48,9 +61,13 @@ body {
 }
 
 .sidebar{
-  width: 250px;
-  padding: 9px;
+  /* width: 250px; */
+  padding: 16px;
   background: #f8fafd;
+  position: fixed;
+  bottom: 0;
+  top: 6%;
+  padding-right: 0;
 }
 .compose-btn:hover{
   background: rgb(200, 230, 30);
@@ -82,14 +99,63 @@ ul{
 /* ===Main content=== */
 .main-content{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: 16%;
+  margin-top: 4%;
+  padding: 0 !important;
+  
+}
+.box-1{
+  width: 95%;
+}
+.box-2{
+  width: 5%;
+      padding-top: 66px;
+      background: #f8fafd;
 }
 .email-row{
-  height: 35px;
+  /* height: 35px; */
   cursor: pointer;
+  padding-left: 1%;
 }
 .email-list{
   
   background: #fff;
+  /* padding-left: 6px; */
+      margin-top: 54px;
 
 }
+.star-btn{
+  font-size: 25px;
+
+}
+.unread{
+
+  background: #ffffff;
+}
+
+.unread{
+
+  font-weight: bold;
+}
+.read{
+ background: #f2f6fc;
+}
+
+ .read .form-check-input{
+  background: #f2f6fc !important;
+  border: 1px solid #bec1c5;
+
+
+}
+
+.unread .form-check-input{
+
+  background: #ffffff;
+
+}
+
+/* .email-row:hover {
+    box-shadow: inset 1px 0 0 rgb(218, 220, 224), inset -1px 0 0 rgb(218, 220, 224), 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    z-index: 2;
+} */

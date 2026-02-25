@@ -30,10 +30,10 @@ function App() {
           {/* Search Bar */}
 
           <button className='btn'>
-              <svg viewBox="0 0 24 24" width="20" height="25">
-                <path
-                  fill="#5f6368"
-                  d="M15.5 14h-.79l-.28-.27A6.471 
+            <svg viewBox="0 0 24 24" width="20" height="25">
+              <path
+                fill="#5f6368"
+                d="M15.5 14h-.79l-.28-.27A6.471 
                     6.471 0 0016 9.5 6.5 6.5 
                     0 109.5 16c1.61 0 3.09-.59 
                     4.23-1.57l.27.28v.79l5 
@@ -42,10 +42,10 @@ function App() {
                     9.5S7.01 5 9.5 5 14 
                     7.01 14 9.5 11.99 14 
                     9.5 14z"
-                />
-              </svg>
-           </button>
-           <InputGroup className='header-search mx-auto'>
+              />
+            </svg>
+          </button>
+          <InputGroup className='header-search mx-auto'>
             <Form.Control
               className='bg-transprent border-0'
             />
@@ -56,7 +56,7 @@ function App() {
                   d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
                 />
               </svg>
-            </InputGroup.Text> 
+            </InputGroup.Text>
           </InputGroup>
 
 
@@ -111,198 +111,176 @@ function App() {
           <div className="row h-100">
 
             {/* Sidebar */}
-            <div className="col-md-3 sidebar">
+            <div className="col-md-2 sidebar">
               <button className="btn compose-btn d-flex align-items-center gap-3 p-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-pencil" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-pencil" viewBox="0 0 16 16">
                   <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
                 </svg>
                 compose
               </button>
               {/* list content */}
-              <ul className="flex-column sidebar-nav">
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+              {/* <ul className="flex-column sidebar-nav">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Inbox</li>
-                <li className="nav-item"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Starred</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Snoozed</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Sent</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Drafts</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Purchases</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Travel</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Less</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Important</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Scheduled</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>All mail</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Spam</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Trash</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Manage</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Subscriptions</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Manage labels</li>
-                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="currentColor" className="bi bi-inbox" viewBox="0 0 16 16">
+                <li className="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
                   <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z" />
                 </svg>Create new label</li>
-              </ul>
+              </ul> */}
+            <ul className="flex-column sidebar-nav">
+
+  {/* Inbox */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-inbox" viewBox="0 0 16 16">
+      <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4z"/>
+      <path d="M3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374z"/>
+    </svg>
+    Inbox
+  </li>
+
+  {/* Starred */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-star" viewBox="0 0 16 16">
+      <path d="M2.866 14.85c-.078.444.36.791.746.593L8 13.187l4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.33-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.93 0L5.354 4.12l-4.898.696c-.441.062-.613.636-.283.95l3.523 3.356-.83 4.73z"/>
+    </svg>
+    Starred
+  </li>
+
+  {/* Snoozed */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-clock" viewBox="0 0 16 16">
+      <path d="M8 3.5a.5.5 0 0 1 .5.5V8l3 1.5a.5.5 0 0 1-.5.866l-3.5-1.75A.5.5 0 0 1 7.5 8V4a.5.5 0 0 1 .5-.5z"/>
+      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    </svg>
+    Snoozed
+  </li>
+
+  {/* Sent */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-send" viewBox="0 0 16 16">
+      <path d="M15.854.146a.5.5 0 0 0-.52-.11l-15 6a.5.5 0 0 0 0 .928l6.586 2.195 2.195 6.586a.5.5 0 0 0 .928 0l6-15a.5.5 0 0 0-.189-.589z"/>
+    </svg>
+    Sent
+  </li>
+
+  {/* Drafts */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-file-earmark" viewBox="0 0 16 16">
+      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5z"/>
+    </svg>
+    Drafts
+  </li>
+
+  {/* Spam */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-exclamation-octagon" viewBox="0 0 16 16">
+      <path d="M11.46.146a1 1 0 0 1 .708.293l3.393 3.393a1 1 0 0 1 .293.708v4.92a1 1 0 0 1-.293.708l-3.393 3.393a1 1 0 0 1-.708.293H4.54a1 1 0 0 1-.708-.293L.439 10.168a1 1 0 0 1-.293-.708V4.54a1 1 0 0 1 .293-.708L3.832.439A1 1 0 0 1 4.54.146h6.92zM8 4.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5zm0 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
+    </svg>
+    Spam
+  </li>
+
+  {/* Trash */}
+  <li className="nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6368" className="bi bi-trash" viewBox="0 0 16 16">
+      <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm4 0A.5.5 0 0 1 10 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5z"/>
+      <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1 0-2H5V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h2.5a1 1 0 0 1 1 1z"/>
+    </svg>
+    Trash
+  </li>
+
+</ul>
+
+
+
+
             </div>
 
             {/* Main Content */}
-            <div className="col-md-9 main-content">
-              <div className='email-list'>
-                <div className='email-row d-flex align-item-center'>
+            <div className="col-md-10 main-content">
+              <div className='email-list box-1'>
+                <div className='email-row d-flex align-item-center read'>
                   <Form.Check type="checkbox" className="email-checkbox p-2" />
 
                   <Button variant="link" className="star-btn p-2">
                     *
                   </Button>
 
-                  <span className="sender p-2">Google</span>
-
+                  <span className="sender p-2">Google Security</span>
                   <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
+                    Security Alert: New sign-in detected{" "}
+                    <span className="snippet">
+                      We noticed a new login to your account from Chrome on Windows.
                     </span>
                   </span>
+                  <span className="time p-2">9:42 AM</span>
 
-                  <span className="time p-2">10:30 AM</span>
                 </div>
-                <div className='email-row d-flex align-item-center'>
+                <div className='email-row d-flex align-item-center unread'>
                   <Form.Check type="checkbox" className="email-checkbox p-2" />
 
                   <Button variant="link" className="star-btn p-2">
                     *
                   </Button>
 
-                  <span className="sender p-2">Google</span>
-
+                  <span className="sender p-2">Google Security</span>
                   <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
+                    Security Alert: New sign-in detected{" "}
+                    <span className="snippet">
+                      We noticed a new login to your account from Chrome on Windows.
                     </span>
                   </span>
+                  <span className="time p-2">9:42 AM</span>
 
-                  <span className="time p-2">10:30 AM</span>
                 </div>
-                <div className='email-row d-flex align-item-center'>
-                  <Form.Check type="checkbox" className="email-checkbox p-2" />
 
-                  <Button variant="link" className="star-btn p-2">
-                    *
-                  </Button>
-
-                  <span className="sender p-2">Google</span>
-
-                  <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
-                    </span>
-                  </span>
-
-                  <span className="time p-2">10:30 AM</span>
-                </div>
-                <div className='email-row d-flex align-item-center'>
-                  <Form.Check type="checkbox" className="email-checkbox p-2" />
-
-                  <Button variant="link" className="star-btn p-2">
-                    *
-                  </Button>
-
-                  <span className="sender p-2">Google</span>
-
-                  <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
-                    </span>
-                  </span>
-
-                  <span className="time p-2">10:30 AM</span>
-                </div>
-                <div className='email-row d-flex align-item-center'>
-                  <Form.Check type="checkbox" className="email-checkbox p-2" />
-
-                  <Button variant="link" className="star-btn p-2">
-                    *
-                  </Button>
-
-                  <span className="sender p-2">Google</span>
-
-                  <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
-                    </span>
-                  </span>
-
-                  <span className="time p-2">10:30 AM</span>
-                </div>
-                <div className='email-row d-flex align-item-center'>
-                  <Form.Check type="checkbox" className="email-checkbox p-2" />
-
-                  <Button variant="link" className="star-btn p-2">
-                    *
-                  </Button>
-
-                  <span className="sender p-2">Google</span>
-
-                  <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
-                    </span>
-                  </span>
-
-                  <span className="time p-2">10:30 AM</span>
-                </div>
-                <div className='email-row d-flex align-item-center'>
-                  <Form.Check type="checkbox" className="email-checkbox p-2" />
-
-                  <Button variant="link" className="star-btn p-2">
-                    *
-                  </Button>
-
-                  <span className="sender p-2">Google</span>
-
-                  <span className="subject flex-grow-1 p-2">
-                    Welcome to Gmail!
-                    <span className="snippet p-2">
-                      Get started with your new account
-                    </span>
-                  </span>
-
-                  <span className="time p-2">10:30 AM</span>
-                </div>
+              </div>
+              <div className='box-2'>
+              dsfg
               </div>
             </div>
 
