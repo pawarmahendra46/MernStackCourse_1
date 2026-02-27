@@ -9,7 +9,6 @@ import DetailsCard from "./components/DetailsCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   //javascript
-
   console.log("dfgdreehhjdjdjrtjtjhhgg....")
   //variable
   const name = "Mahendra"; //we cant change const value
@@ -19,7 +18,7 @@ function App() {
   console.log(name, "name===>");
 
   //string
-  const a = "Hosfdfsdff.";
+  const a = "Ramchandra";
 
   //array
   const b = ["apple", "mango", "test", "pune", 132];
