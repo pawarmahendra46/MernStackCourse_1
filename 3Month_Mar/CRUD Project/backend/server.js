@@ -63,41 +63,68 @@ app.post("/api/create-item", async (req, res) => {
 });
 
 //API 1 -Update item
-// app.put("/api/update-item", (req, res) => {
-//      try {
-//         const { name, description, sellingPrice, purchasePrice, quantity, unit } = req.body;
+app.put("/api/update-item/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
 
-//         const saveItem = new Items({
-//             name,
-//             description,
-//             sellingPrice,
-//             purchasePrice,
-//             quantity,
-//             unit
-//         });
+        const { 
+            name,
+            description,
+            sellingPrice,
+            purchasePrice,
+            quantity,
+            unit
+        } = req.body;
 
-//         await saveItem.save();
+        const updatedItem = await Items.findByIdAndUpdate(
+            id,
+            {
+                name,
+                description,
+                sellingPrice,
+                purchasePrice,
+                quantity,
+                unit
+            },
+            { new: true } // returns updated document
+        );
 
-//         res.status(201).json(saveItem);
+        if (!updatedItem) {
+            return res.status(404).json({ message: "Item not found" });
+        }
 
-//     } catch (err) {
-//         console.log(err);
-//         res.status(500).json({ message: "Error updating item" });
-//     }
-// })
+        res.status(200).json(updatedItem);
+
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: "Error updating item" });
+    }
+});
 
 //API 1 -Delete item
-app.delete("/api/delete-item", (req, res) => {
+app.delete("/api/delete-item/:id", async (req, res) => {
     try {
+        const { id } = req.params;
 
+        const deletedItem = await Items.findByIdAndDelete(id);
+
+        if (!deletedItem) {
+            return res.status(404).json({ message: "Item not found" });
+        }
+
+        res.status(200).json({
+            message: "Item deleted successfully",
+            data: deletedItem
+        });
+
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: "Error deleting item" });
     }
-    catch (err) {
-        console.log(err)
-    }
-})
+});
 
 //API 1 -GetAll item
-app.get("/api/GetAll-item", async(req, res) => {
+app.get("/api/Get-all-item", async(req, res) => {
     try {
     
         const items=await Items.find()
@@ -107,10 +134,25 @@ app.get("/api/GetAll-item", async(req, res) => {
         console.log(err)
     }
 })
+//API-1 GetSingle item on id
+app.get("/api/items/:id", async (req, res) => {
+    try {
+        const item = await Items.findById(req.params.id);
 
+        if (!item) {
+            return res.status(404).json({ message: "Item not found" });
+        }
+
+        res.status(200).json(item);
+
+    } catch (err) {
+        console.log(err);
+        res.status(500).json({ message: "Error fetching item" });
+    }
+});
 
 // health Route
-app.get("health/", (req, res) => {
+app.get("/health", (req, res) => {
     res.send("Server Running..");
 });
 
