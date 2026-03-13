@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'
 
 function App() {
-  const [itemName, setItemName] = useState([]);
+  const [itemName, setItemName] = useState("");
   const [discription, setDiscription] = useState("");
   const [purchasePrice, setPurchasePrice] = useState("");
   const [sellingPrice, setSellingPrice] = useState("");
